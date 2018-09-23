@@ -26,14 +26,13 @@ enum Color {
 // Color[2] --> "GREEN"
 
 // Enum with string values (Since ts 2.4)
-enum Animal {
-  CAT = "CAT",
-  DOG = "DOG",
-  HORSE = "HORSE"
+enum PaymentType {
+  CREDIT = "CREDIT",
+  DEBIT = "DEBIT"
 }
 
-// Animal.CAT --> "CAT"
-// Animal["CAT"] --> "CAT"
+// PaymentType.CREDIT --> "CREDIT"
+// PaymentType["CREDIT"] --> "CREDIT"
 
 var mixed: any[] = [1, {}, "2"];
 
@@ -44,17 +43,3 @@ function hello(name: string): void {
 var hello2 = (name: string): void => {
   console.log(name);
 };
-
-class Cat {
-  public color: Color;
-  private nickname: string;
-
-  constructor(nickname: string, color: Color) {
-    this.nickname = nickname;
-    this.color = color;
-  }
-
-  public getNickname() {
-    return this.nickname;
-  }
-}

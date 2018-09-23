@@ -6,7 +6,6 @@ planned to keep at my workplace. Still a **WORK IN PROGRESS**.
 ### Environment setup
 
 - Node & npm [https://nodejs.org/en/](https://nodejs.org/en/)
-- Create a project [https://github.com/wmonk/create-react-app-typescript](https://github.com/wmonk/create-react-app-typescript)
 - Install Typescript either globally `npm install typescript -g` or locally in
   the created project folder `npm install typescript --save`
 
@@ -21,9 +20,9 @@ planned to keep at my workplace. Still a **WORK IN PROGRESS**.
    - editors
    - tslint [https://palantir.github.io/tslint/](https://palantir.github.io/tslint/)
    - ts-node [https://github.com/TypeStrong/ts-node](https://github.com/TypeStrong/ts-node)
-2. Basic types (example1.ts)
-3. Interfaces and types (example2.ts)
-4. @types/\*\* packages and d.ts files (example3.ts) // **TODO**
+2. Basic types and classes
+3. Interfaces and types
+4. @types/\*\* packages and d.ts files // **TODO**
    - declare global types
    - extend existing library functionalities
 
