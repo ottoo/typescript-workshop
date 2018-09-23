@@ -2,18 +2,18 @@
  * Basic data types
  */
 
-var str: string = "Nimi";
+let str: string = "Nimi";
 
-var number: number = 1;
+let num: number = 1;
 
-var bool: boolean = true;
+let bool: boolean = true;
 
-var obj: object = {
+let obj: object = {
   x: 1,
   y: 2
 };
 
-var arr = [1, 2, 3];
+let arr = [1, 2, 3];
 
 // Enum with numeric values
 enum Color {
@@ -35,20 +35,26 @@ enum Animal {
 // Animal.CAT --> "CAT"
 // Animal["CAT"] --> "CAT"
 
-var mixed: any[] = [1, {}, "2"];
+let mixed: any[] = [1, {}, "2"];
 
 function hello(name: string): void {
   console.log(name);
 }
 
-var hello2 = (name: string): void => {
+let hello2 = (name: string): void => {
   console.log(name);
 };
 
 class Cat {
-  color: Color;
+  public color: Color;
+  private nickname: string;
 
-  constructor() {
-    this.color = Color.RED;
+  constructor(nickname: string, color: Color) {
+    this.nickname = nickname;
+    this.color = color;
+  }
+
+  public getNickname() {
+    return this.nickname;
   }
 }

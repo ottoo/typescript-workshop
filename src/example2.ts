@@ -27,7 +27,7 @@ interface IEmployee extends IPerson {
   employeeId: number;
 }
 
-var matti: IEmployee = {
+let matti: IEmployee = {
   firstName: "Matti",
   lastName: "Meikalainen",
   age: 20,
@@ -41,11 +41,11 @@ var matti: IEmployee = {
   ssn: "01011950-011X"
 };
 
-interface GetFullNameFunc {
+interface IGetFullNameFunc {
   (person: IPerson): string;
 }
 
-var getFullName: GetFullNameFunc = function(person: IPerson) {
+let getFullName: IGetFullNameFunc = function(person: IPerson) {
   return `${person.firstName} ${person.lastName}`;
 };
 
@@ -84,7 +84,7 @@ type Employee = {
 // Intersection type
 type WorkerPerson = Person & Employee;
 
-var pekka: WorkerPerson = {
+let pekka: WorkerPerson = {
   firstName: "Pekka",
   lastName: "Meikalainen",
   age: 20,
@@ -100,8 +100,8 @@ var pekka: WorkerPerson = {
 
 type GetFullNameFuncType = (person: IPerson) => string;
 
-var getFullName: GetFullNameFuncType = function(person: IPerson) {
+let getFullNameFn: GetFullNameFuncType = function(person: IPerson) {
   return `${person.firstName} ${person.lastName}`;
 };
 
-getFullName(matti);
+getFullNameFn(matti);

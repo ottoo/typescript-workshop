@@ -19,6 +19,8 @@ planned to keep at my workplace. Still a **WORK IN PROGRESS**.
      - strict rules
    - build tools
    - editors
+   - tslint
+   - ts-node
 2. Basic types (example1.ts)
 3. Interfaces and types (example2.ts)
 4. @types/\*\* packages and d.ts files (example3.ts) // **TODO**
