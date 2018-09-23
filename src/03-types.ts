@@ -45,10 +45,10 @@ var pekka: WorkerPerson = {
   employeeId: 321
 };
 
-type GetFullNameFuncType = (person: IPerson) => string;
+type GetFullNameFuncType = (person: Person) => string;
 
-var getFullName: GetFullNameFuncType = function(person: IPerson) {
+var getFullName: GetFullNameFuncType = function(person: Person) {
   return `${person.firstName} ${person.lastName}`;
 };
 
-getFullName(matti);
+getFullName(pekka);
